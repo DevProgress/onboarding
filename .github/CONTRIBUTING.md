@@ -11,4 +11,4 @@ When starting a new repository:
 
 in your shell.
 
-2) Please only put "secrets" (passwords, API keys and such) in a file named "secrets.txt" at the root level of your repository AFTER you have created the gitingore file. This will prevent you from publishing DevPorgress passwords to the entire world.
+2) Please only put "secrets" (passwords, API keys and such) in a file named "secrets.txt" at the root level of your repository AFTER you have created the gitignore file. This will prevent you from publishing DevProgress passwords to the entire world.
