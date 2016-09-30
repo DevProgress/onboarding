@@ -1,5 +1,5 @@
     // drafting...
-  
+
 # Intro
 
 DevProgress is a team of kick ass developers using their skills and expertise to create tools that will help elect Hillary Clinton and other Democratic and progressive candidates.
@@ -12,7 +12,7 @@ Here is outline of our standard break down of tasks, pushing code and releasing 
 
 Our standard baseline code is lightweight client only react web apps on gh-pages.
 
-- Javascript. 
+- Javascript.
 - React. Javascript driven css.
 - Webpack npm dev and build.
 - Automated Testing (?)
@@ -30,7 +30,7 @@ Developers can visit the trello board to see what projects are new, inflight and
 
 ### Slack
 
-Slack is our discussion forum for all projects. 
+Slack is our discussion forum for all projects.
 
 _This is where technical decisions get made._
 
@@ -74,6 +74,13 @@ Once a developer begins working on an issue they assign themselves to it so othe
 
 ### Deploying
 
-Github Pages.
+We use [Github Pages](https://pages.github.com/) for deployment. To set up:
 
-Our strategy for merging from `master` to `gh-pages` is currently a work in progress. Tbc.
+1. Set up your development workflow to write production files to the `/docs` directory. Though the name seems like a bit of a misnomer, using it provides the least cumbersome Github Pages deployment option. Here are some examples:
+
+  1. Jekyll on [`i-like-hillary-but`](https://github.com/DevProgress/i-like-hillary-but/blob/master/_config.yml).
+  2. React+WebPack on [`debate-bingo`](https://github.com/DevProgress/debate-bingo/blob/master/webpack.config.js).
+
+2. Follow [instructions](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch) for publishing Github Pages site from a `/docs` folder on your `master` branch.
+
+3. Whenever you're ready to deploy, write the latest production files into `/docs`, commit them to `master`, and follow the usual code review process. It may take a bit of time for Github Pages to update.
