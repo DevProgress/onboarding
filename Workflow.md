@@ -83,4 +83,4 @@ We use [Github Pages](https://pages.github.com/) for deployment. To set up:
 
 2. Follow [instructions](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#publishing-your-github-pages-site-from-a-docs-folder-on-your-master-branch) for publishing Github Pages site from a `/docs` folder on your `master` branch.
 
-3. Whenever you're ready to deploy, write the latest production files into `/docs`, then commit and push them to `master`. It may take a bit of time for Github Pages to update.
+3. Whenever you're ready to deploy, write the latest production files into `/docs`, commit them to `master`, and follow the usual code review process. It may take a bit of time for Github Pages to update.
