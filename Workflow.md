@@ -42,14 +42,7 @@ Once a technical approach has been agreed upon in slack the collaboration moves 
 
 #### Branching Strategy
 
-We only really have 2 types of branches.
-
-1. Master. This is what goes to Production.
-2. _Whatever branch you are working on_. This is where you start by branching of master.
-
-#### Pull Request: Code Review & Merge
-
-To get your work back to the Master branch you will need to create a Pull Request and have 2 people add a "+1" comment on it.
+The tip of the `master` branch of the project is what goes to production. To contribute, use [fork + pull request](https://help.github.com/articles/fork-a-repo/) workflow. Avoid creating your own branches in the project repository.
 
 ##### Code Reviewing
 
@@ -62,15 +55,23 @@ All code needs to be reviewed before it is merged back to the `master` branch.
 
 With two "+1" comments on any given Pull Request the original creator is free to approve the Pull Request.
 
+Consider switching your `master` branch to be a [protected branch](https://help.github.com/articles/about-protected-branches/), which will make reviews mandatory.
+
 ### Task breakdown & Issue Tracking
 
 We create github issues. Anyone is free to add issues to any given Project.
 
 Once a developer begins working on an issue they assign themselves to it so others know it is in progress.
 
-### Testing
+Use [milestones](https://help.github.com/articles/creating-and-editing-milestones-for-issues-and-pull-requests/) to create and track burndown (aka deadline-based) lists of issues.
 
-...
+#### Testing and Continuous integration
+
+Consider developing a testing plan for your project. What are the things that matter and need to be checked twice before pushing to prod? For example, the project [i-like-hillary-but](https://github.com/DevProgress/i-like-hillary-but) is mostly articles with links, so an [html-proofer](https://github.com/gjtorikian/html-proofer) is a good way to make sure the links lead the user to the right places.
+
+A healthy project could use a hygiene robot that watches over it. We use [Travis CI](https://travis-ci.org/profile/DevProgress) and it's really easy to set up. There are straightforward [guides](https://docs.travis-ci.com/) available.
+
+You need to be an admin of the project in order to flip the *Travis CI* switch. Ask for the privilege or ping one of the folks on `#peeps-infra`.
 
 ### Deploying
 
